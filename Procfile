@@ -1,0 +1,1 @@
+web: gunicorn shahilwebsite.wsgi --log-file -
