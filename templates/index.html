@@ -78,6 +78,18 @@
 	<!--
 		Favicons
 	-->
+
+
+
+	<!-- ----------fancy galllery------------- -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css"
+		integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+		integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<!-- ----------end fancy galllery------------- -->
 	<!-- <link rel="shortcut icon" href="{% static 'images/favicons/favicon.ico"> -->
 
 	<!-- Global site tag (gtag.js' %}) - Google Analytics -->
@@ -216,6 +228,7 @@
 								class="fab fa-instagram"></span></a>
 						<a target="_blank" href="https://www.facebook.com/profile.php?id=100012170237494"><span
 								class="fab fa-facebook-f"></span></a>
+						<a target="_blank" href="tel:+91 9207218025"><span class="fa fa-phone-square"></span></a>
 
 					</div>
 
@@ -587,7 +600,7 @@
 					<div class="content works">
 
 						<!-- title -->
-						<div class="title">Recent Works</div>
+						<div class="title">Gallery </div>
 
 						<!-- filters -->
 						<div class="filter-menu filter-button-group">
@@ -596,7 +609,7 @@
 								<label><input type="radio" name="fl_radio" value="photo" />Image</label>
 							</div> -->
 							<div class="f_btn">
-								<label><input type="radio" name="fl_radio" value="gallery" />Gallery</label>
+								<label><input type="radio" name="fl_radio" value="gallery" />Recent Photo </label>
 							</div>
 
 						</div>
@@ -604,59 +617,66 @@
 						<!-- content -->
 						<div class="row grid-items border-line-v">
 
-							<!-- work item photo -->
-							<!-- <div class="col col-d-6 col-t-6 col-m-12 grid-item photo border-line-h">
-								<div class="box-item">
-									<div class="image">
-										<a href="{% static 'images/shahilphotos/2.jpeg' %}" class="has-popup-image">
-											<img src="{% static 'images/shahilphotos/2.jpeg' %}" alt="" />
-											<span class="info">
-												<span class="ion ion-image"></span>
-											</span>
-										</a>
-									</div>
-									<div class="desc">
-										<a href="{% static 'images/shahilphotos/2.jpeg' %}" class="name has-popup-image">Motorcycle
-											Helmet</a>
-										<div class="category">Image</div>
-									</div>
-								</div>
-							</div> -->
 
-
-
-
-							<!-- work item photo -->
-							<div class="col col-d-6 col-t-6 col-m-12 grid-item gallery border-line-h">
-								<div class="box-item">
-									<div class="image">
-										<a href="#gallery-1" class="has-popup-gallery">
-											<img src="{% static 'images/shahilphotos/3.jpeg' %}" alt="" />
-											<span class="info">
-												<span class="ion ion-images"></span>
-											</span>
-										</a>
-										<div id="gallery-1" class="mfp-hide">
-											<a href="{% static 'images/shahilphotos/5.jpeg' %}"></a>
-											<a href="{% static 'images/shahilphotos/3.jpeg' %}"></a>
-											<a href="{% static 'images/shahilphotos/5.jpeg' %}"></a>
-											<a href="{% static 'images/shahilphotos/new.jpg' %}"></a>
-											<a href="{% static 'images/shahilphotos/shahil.jpeg' %}"></a>
-
-
-										</div>
-									</div>
-									<div class="desc">
-										<a href="{% static 'images/shahilphotos/3.jpeg' %}"
-											class="name has-popup-image">Photos</a>
-										<div class="category">Gallery</div>
-									</div>
-								</div>
-							</div>
 
 							<!-- work item music -->
 
+							<div class="col col-d-6 col-t-6 col-m-12 grid-item gallery border-line-h">
+								<div class="box-item">
+									<div class="box-item">
+										<div class="image">
+											<div id="lightgallery" class="row item lightGallery">
+												<a href="{% static 'images/shahilphotos/shahil img 2.jpeg' %}"
+													class="fancybox" data-fancybox="gallery1"><img
+														src="{% static 'images/shahilphotos/shahil img 2.jpeg' %}"
+														class="p-1" alt="image small"></a>
+												<a href="{% static 'images/shahilphotos/shahil img 3.jpeg' %}"
+													class="fancybox" data-fancybox="gallery1"><img
+														src="{% static 'images/shahilphotos/shahil img 3.jpeg' %}"
+														class="p-1" alt="image small"></a>
+												<a href="{% static 'images/shahilphotos/shahil img 4.jpeg' %}" class="fancybox"
+													data-fancybox="gallery1"><img
+														src="{% static 'images/shahilphotos/shahil img 4.jpeg' %}" class="p-1"
+														alt="image small"></a>
+												<a href="{% static 'images/shahilphotos/shahil img 5.jpg' %}"
+													class="fancybox" data-fancybox="gallery1"><img
+														src="{% static 'images/shahilphotos/shahil img 5.jpg' %}"
+														class="p-1" alt="image small"></a>
 
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col col-d-6 col-t-6 col-m-12 grid-item gallery border-line-h">
+								<div class="box-item">
+									<div class="box-item">
+										<div class="image">
+											<div id="lightgallery" class="row item lightGallery">
+
+												<a href="{% static 'images/shahilphotos/shahil img1.jpeg' %}"
+													class="fancybox" data-fancybox="gallery1"><img
+														src="{% static 'images/shahilphotos/shahil img1.jpeg' %}"
+														class="p-1" alt="image small"></a>
+												<a href="{% static 'images/shahilphotos/shahil.jpeg' %}"
+													class="fancybox" data-fancybox="gallery1"><img
+														src="{% static 'images/shahilphotos/shahil.jpeg' %}" class="p-1"
+														alt="image small"></a>
+												<a href="{% static 'images/shahilphotos/shahil img 6.jpg' %}"
+													class="fancybox" data-fancybox="gallery1"><img
+														src="{% static 'images/shahilphotos/shahil img 6.jpg' %}"
+														class="p-1" alt="image small"></a>
+												<a href="{% static 'images/shahilphotos/shahil img 8.jpeg' %}"
+													class="fancybox" data-fancybox="gallery1"><img
+														src="{% static 'images/shahilphotos/shahil img 8.jpeg' %}"
+														class="p-1" alt="image small"></a>
+												
+
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 
 
 
